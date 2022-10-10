@@ -10,14 +10,11 @@ html, body {
 }
 
 body {
-    font-family: "Roboto Mono", monospace;
+    font-family: 'Silkscreen', cursive;;
     min-height:100%;
     position: relative;
     /* background-image: url("https://outraspalavras.net/wp-content/uploads/2017/08/170803-Algoritmos.jpg"); */
     background-color: #000000;
-    /* background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat; */
   }
 
   body::before {
@@ -78,7 +75,7 @@ body {
   input {
     margin: 4px;
     padding: 6px;
-    border-radius: 5px;
+    border-radius: 50px;
   }
   
   button {
@@ -96,7 +93,8 @@ body {
 
 /* From uiverse.io */
 button {
- --glow-color: rgb(156, 171, 206);
+  font-family: 'Silkscreen', cursive;
+ --glow-color: rgb(45, 87, 184);
  --glow-spread-color: rgb(38,212, 255);
  --enhanced-glow-color: rgb(206, 240, 255);
  --btn-color: rgb(38,212, 255);
@@ -145,9 +143,9 @@ button:active {
 }
 
 h3.span {
-  font-size: 2vw;
-  letter-spacing: 0.4em;
-  font-family: roboto, sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-family: 'Peralta', cursiva;
   font-weight: 300;
   color: #faebd7;
   z-index: 4;
@@ -161,8 +159,8 @@ h3.span {
 
 @-webkit-keyframes loading {
   to {
-    text-shadow: 20px 0 70 px #ff0266;
-    color: #ff0266;
+    text-shadow: 20px 0 70 px #a20909;
+    color: #f40505;
   }
 }
 
@@ -175,7 +173,7 @@ h3.span {
 }
 
 .loader span:nth-child(4) {
-  -webkit-animation-delay: 0.3⛵ ;
+  -webkit-animation-delay: 0.3s ;
 }
 
 .loader span:nth-child(5) {
