@@ -28,7 +28,6 @@ function Chutar() {
     elementoResultado.innerHTML =
       "errouuuuuu! O nº SECRETO é maior."
       tentativas++
-      document.getElementById('gifFausto').style.display = "block";
     errou.play();
     } else {
       elementoResultado.innerHTML =
