@@ -34,7 +34,7 @@ function Chutar() {
       elementoResultado.innerHTML =
         "errouuuuuu! O nº SECRETO é menor."
         tentativas++
-    gitquePena.play();
+    quePena.play();
     }
 }
 }
