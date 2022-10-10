@@ -1,6 +1,7 @@
 var numeroSecreto = parseInt(Math.random() * 11);
 
 let errou=document.getElementById("audioErrou");
+let quePena=document.getElementById("audioErrou2");
 let acertou=document.getElementById("audioAcertou");
 let gameOver=document.getElementById("gameOver");
 
@@ -33,6 +34,7 @@ function Chutar() {
       elementoResultado.innerHTML =
         "errouuuuuu! O nº SECRETO é menor."
         tentativas++
+    gitquePena.play();
     }
 }
 }
