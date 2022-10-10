@@ -16,14 +16,22 @@ function Chutar() {
 
   if (chute == numeroSecreto) {
     elementoResultado.innerHTML = "Você acertou!";
-    document.getElementById('gifSilvio').style.display = "block";
+    //inserir um gif/imagem
     acertou.play();
+    setTimeout(() => {
+      window.location.reload ()
+    }, 3000);
     
   } else if (chute < 0 || chute > 10) {
     elementoResultado.innerHTML = "Você deve digitar um número de 0 a 10.";
+
   } else if (tentativas >= totalTentativas) {
     elementoResultado.innerHTML = "Game Over. As tentativas acabaram. O número secreto era " + numeroSecreto + ".";
     gameOver.play();
+    setTimeout(() => {
+      window.location.reload ()
+    }, 5000);
+
   } else {
     if (chute < numeroSecreto){
     elementoResultado.innerHTML =
