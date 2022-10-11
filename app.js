@@ -4,6 +4,7 @@ let errou=document.getElementById("audioErrou");
 let quePena=document.getElementById("audioErrou2");
 let acertou=document.getElementById("audioAcertou");
 let gameOver=document.getElementById("gameOver");
+let alerta=document.getElementById("alerta");
 
 var tentativas = 1;
 const totalTentativas = 3;
@@ -24,6 +25,10 @@ function Chutar() {
     
   } else if (chute < 0 || chute > 10) {
     elementoResultado.innerHTML = "Você deve digitar um número de 0 a 10.";
+    alerta.play();
+    setTimeout(() => {
+      window.location.reload ()
+    }, 5000);
 
   } else if (tentativas >= totalTentativas) {
     elementoResultado.innerHTML = "Game Over. As tentativas acabaram. O número secreto era " + numeroSecreto + ".";
