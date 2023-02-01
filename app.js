@@ -1,3 +1,5 @@
+
+
 var numeroSecreto = parseInt(Math.random() * 11);
 
 let errou=document.getElementById("audioErrou");
@@ -13,8 +15,6 @@ function Chutar() {
   var elementoResultado = document.getElementById("resultado");
   var chute = parseInt(document.getElementById("valor").value);
 
-  console.log(chute);
-
   if (chute == numeroSecreto) {
     elementoResultado.innerHTML = "Você acertou!";
     //inserir um gif/imagem
@@ -26,9 +26,6 @@ function Chutar() {
   } else if (chute < 0 || chute > 10) {
     elementoResultado.innerHTML = "Você deve digitar um número de 0 a 10.";
     alerta.play();
-    setTimeout(() => {
-      window.location.reload ()
-    }, 5000);
 
   } else if (tentativas >= totalTentativas) {
     elementoResultado.innerHTML = "Game Over. As tentativas acabaram. O número secreto era " + numeroSecreto + ".";
@@ -49,5 +46,5 @@ function Chutar() {
         tentativas++
     quePena.play();
     }
-}
+  }
 }
